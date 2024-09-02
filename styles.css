@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #6200ea;
+    --secondary-color: #b388ff;
+    --background-color: #f3e5f5;
+    --text-color: #37474f;
+    --card-background: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.podcast {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.podcast:hover {
+    transform: translateY(-5px);
+}
+
+.podcast h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.podcast p {
+    margin-bottom: 15px;
+}
+
+.podcast button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.podcast button:hover {
+    background-color: var(--primary-color);
+}
+
+#filterInput {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#filterInput:focus {
+    border-color: var(--primary-color);
+}
+
+.spotify-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+}
+
+.spotify-button:hover {
+    background-color: #1ED760;
+}
+
+.spotify-button i {
+    margin-right: 10px;
+}
+
+.spotify-button.connected {
+    background-color: #4CAF50;
+}
+
+.spotify-button.connected:hover {
+    background-color: #45a049;
+}

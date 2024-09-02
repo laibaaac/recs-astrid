@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Recommendations for Astrid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-podcast"></i> Podcast Picks for Astrid</h1>
+    </header>
+    <main>
+        <input type="text" id="filterInput" placeholder="Discover your next favorite podcast...">
+        <button id="spotifyConnect" class="spotify-button">
+            <i class="fab fa-spotify"></i> Connect to Spotify
+        </button>
+        <section id="podcastList"></section>
+    </main>
+    <template id="podcastTemplate">
+        <article class="podcast">
+            <h2></h2>
+            <p class="category"></p>
+            <p class="description"></p>
+            <button class="favorite-button">Add to Favorites</button>
+            <button class="spotify-listen-button">Listen on Spotify</button>
+        </article>
+    </template>
+</body>
+</html>
