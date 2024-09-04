@@ -105,3 +105,24 @@ h1 {
 .spotify-button.connected:hover {
     background-color: #45a049;
 }
+
+/* New styles for the Random button */
+#randomButton {
+    display: block;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#randomButton:hover {
+    background-color: var(--primary-color);
+}
